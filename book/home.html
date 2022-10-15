@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简易电子书</title>
+</head>
+<style type="text/css">
+	article{display: inline-block;border-style: solid;border-width: 3px;margin:auto;height: 520px;}
+	article article{width: 0px;height: 500px;border:none;}
+	article img{width: 200px;height: 200px;margin-left: 20px;margin-right: 50px;margin-top: 0px;}
+	article div{width: 245px;background-color: #C0C0C0;margin:5px;}
+	article div a{margin:auto;text-decoration: none;color:#000000;padding: 10px; font:1.2em/40px microsoft yahei;}
+	div:hover{background-color: #808080;}
+	iframe{margin-left: 255px;margin-top: 0px;}
+</style>
+<body>
+	<article>
+		<article>
+			<img src="https://img2.baidu.com/it/u=2117023534,1834717210&fm=253&fmt=auto&app=138&f=JPEG?w=719&h=500" alt="图片路径不正确">
+			
+			<div><a href="book.html#p1" target="win"></a></div>
+			<div><a href="book.html#p2" target="win"></a></div>
+			<div><a href="book.html#p3" target="win"></a></div>
+			<div><a href="book.html#p4" target="win"></a></div>
+			<div><a href="book.html#p5" target="win"></a></div>
+
+			<!-- <iframe name="my-iframe" id="my-iframe" src="img/KVE.jpg" frameborder="2px" width="500px" height="600px" scrolling="yes"></iframe> -->
+			<!-- <a href="http://127.0.0.1:8848/web%E8%AF%BE%E7%A8%8B/index.html"  target="my-iframe" class="aa1">点击我子网页可以跳转到你需要的地方</a> -->
+			
+		</article>
+		<iframe src="book.html" frameborder="1" width="800px" height="500px" name="win"></iframe>
+	</article>
+</body>
+</html>
