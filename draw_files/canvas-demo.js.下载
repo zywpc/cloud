@@ -152,7 +152,7 @@ red.onclick = function () {
     EraserEnabled = false;
     eraser.classList.remove('active');
 };
-orange.onclick = function () {
+yellow.onclick = function () {
     ctx.strokeStyle = 'yellow';
     canvas.classList.add('cursor3');
     canvas.classList.remove('cursor2');
