@@ -175,7 +175,7 @@ green.onclick = function () {
     eraser.classList.remove('active');
 };
 blue.onclick = function () {
-    ctx.strokeStyle = 'blueviolet';
+    ctx.strokeStyle = 'blue';
     canvas.classList.add('cursor5');
     canvas.classList.remove('cursor2');
     canvas.classList.remove('cursor3');
