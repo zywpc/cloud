@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<script>var user = document.getElementById("user")
+    var pass = document.getElementById("pass")
+    let obj = {"zyw":20130812,"wyt":1234}
+    function login(){
+        if (user in Object.keys(obj)){
+            if (pass in Object.values(obj)){
+                location.replace("login_end.html")
+            }else{
+                alert("密码不正确")
+            }
+        }else{
+            alert("用户名不正确")
+        }
+    }
+    function agree(){
+        var user2 = prompt("Enter username")
+        if (user2 in Object.keys(obj)){
+            location.replace("login_end.html")
+        }else{
+            alert("用户名不正确")
+        }
+    }
+    //配置域名
+    </script>
+    <style>
+        .login_box{
+            text-align: center;
+            background-color: aqua;
+        }
+        .login_box > h1{
+            text-align: center;
+            color: white;
+        }
+        .login_box > input {
+            background-color: white;
+            color:black;
+        }
+    </style>
+<body>
+    <div class="login_box">
+        <h1>Login</h1><br>
+        <input type="text" id="user"><br>
+        <input type="password" id="pass"><br>
+        <button onclick="login()"><strong>登录</strong></button>
+    </div>
+
+</body>
+</html>
